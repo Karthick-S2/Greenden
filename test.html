@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <style>
+    body {
+      
+      flex-wrap: wrap;
+      width: fit-content;
+      border: 1px solid black;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      background-color: #c4ecfa;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      width: fit-content;
+      border: 1px solid black;
+    }
+    .header {
+      background-color: #00c0b2;
+      text-align: center;
+    }
+
+    .Footer {
+      background-color: #00c0b2;
+      text-align: center;
+    }
+    .middle {
+      display: grid;
+      grid-template-columns: 200px 500px;
+      grid-template-rows: 300px;
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+    .sec1 {
+      background-color: #6eda6d;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .sec2 {
+      background-color: #fcb14d;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      height: 150px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .subsec {
+      background-color: #fdd24b;
+      width: 100px;
+      height: 100px;
+    }
+
+    .ss {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Header</h1>
+      </header>
+      <div class="middle">
+        <div class="sec1">Aside</div>
+        <div class="sec2">
+          <div class="text">Article</div>
+          <div class="ss">
+            <div class="subsec">Image</div>
+            <div class="subsec">Image</div>
+            <div class="subsec">Image</div>
+          </div>
+        </div>
+      </div>
+      <footer class="Footer">
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
